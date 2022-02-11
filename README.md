@@ -1,4 +1,4 @@
-# esbuild-plugin-tsc
+# @emarketeer/esbuild-plugin-tsc
 
 An esbuild plugin which uses tsc to compile typescript files.
 
@@ -14,14 +14,14 @@ If for some reason you want to use typescripts compiler for all files you can si
 1. Install this plugin in your project:
 
    ```sh
-   npm install --save-dev esbuild-plugin-tsc typescript
+   npm install --save-dev @emarketeer/esbuild-plugin-tsc typescript
    ```
 
 2. Add this plugin to your esbuild build script:
 
    Javascript:
    ```diff
-   +const esbuildPluginTsc = require('esbuild-plugin-tsc');
+   +const esbuildPluginTsc = require('@emarketeer/esbuild-plugin-tsc');
     ...
     esbuild.build({
       ...
@@ -33,7 +33,7 @@ If for some reason you want to use typescripts compiler for all files you can si
 
    Typescript:
    ```diff
-   +import { esbuildPluginTsc } from 'esbuild-plugin-tsc';
+   +import { esbuildPluginTsc } from '@emarketeer/esbuild-plugin-tsc';
     ...
     esbuild.build({
       ...
